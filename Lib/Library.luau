@@ -3669,7 +3669,7 @@ pcall(I.Destroy,I)
 end
 end
 
-function s:MakeWindow(ab)
+function s.MakeWindow(ab)
 if self.LOADED_UI_LIBRARY then
 return error("you can create only 1 Window",2)
 end
