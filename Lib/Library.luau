@@ -1,4 +1,4 @@
-local a = function(...) return ... end
+local a=cloneref or function(...)return...end
 
 local b = delfolder or deletefolder or function() end
 local c = delfile or deletefile or function() end
