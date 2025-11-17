@@ -1,10 +1,10 @@
-local a=cloneref or(function(...)return...end)
+local a = cloneref or function(...) return ... end
 
-local b=delfolder or deletefolder
-local c=delfile or deletefile
-local d=makefolder
-local e=writefile
-local f=readfile
+local b = delfolder or deletefolder or function() end
+local c = delfile or deletefile or function() end
+local d = makefolder or function() end
+local e = writefile or function() end
+local f = readfile or function() return '' end
 
 local g=setmetatable({},{
 __index=function(g,h)
